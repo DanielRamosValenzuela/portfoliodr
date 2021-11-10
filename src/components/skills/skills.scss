@@ -1,0 +1,78 @@
+@import "../../general.scss";
+
+.skills {
+  .skillsTitle {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    h1 {
+      font-size: 50px;
+      img {
+        height: 45px;
+        width: 45px;
+      }
+
+      @include mobile {
+        font-size: 20px;
+        img {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+  }
+
+  .skillsWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    .skillsCard {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      overflow: hidden;
+      @include mobile {
+        padding-top: 10px;
+
+        justify-content: center;
+        text-align: center;
+      }
+
+      .skillsImg {
+        margin: 10px;
+        width: 100%;
+        height: 110px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        @include mobile {
+          width: 100%;
+          height: 50px;
+        }
+
+        img {
+          width: 100px;
+          padding-top: 10px;
+          height: 100px;
+
+          &:hover {
+            animation: headShake;
+            animation-duration: 2s;
+          }
+          &.active {
+            animation: flip;
+            animation-duration: 2s;
+          }
+          @include mobile {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../general.scss";
+
+.contact {
+  background-color: black;
+  .contactBackground {
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+
+    background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .contactForm {
+      text-align: center;
+      background-color: white;
+      border-radius: 20px;
+      position: relative;
+      z-index: 2;
+      height: 80%;
+      width: auto;
+      margin: 50px;
+      transition: all 1s ease;
+
+      h1 {
+        font-size: 50px;
+        margin-top: 10px;
+        img {
+          height: 45px;
+          width: 45px;
+        }
+
+        @include mobile {
+          font-size: 20px;
+          img {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
