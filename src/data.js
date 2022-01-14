@@ -41,6 +41,30 @@ export const fullStackPortfolio = [
     text: `Este es un trabajo que realice para postular a empresas, consiste en una llamada a una API que me dieron para mostrar indicadores económicos. Se tenía que usar Bootstrap para el diseño.`,
     github: "https://github.com/DanielRamosValenzuela/indicadores",
   },
+  {
+    id: 12,
+    title: "Blackjack",
+    img: "assets/blackjack.png",
+    link: "https://danielramosvalenzuela.github.io/blackjackudemy/",
+    text: `Esta aplicación la hice dentro de uno de mis cursos de Udemy de JavaScripo muy entretenido espero que lo disfruten 😉. `,
+    github: "https://github.com/DanielRamosValenzuela/blackjackudemy",
+  },
+  {
+    id: 13,
+    title: "Gift app",
+    img: "assets/giftapp.png",
+    link: "https://giftappudemy.netlify.app/",
+    text: `Esta aplicación llama a una API de gifts, la hice en uno de mis cursos de Udemy de React siguiendo las instrucciones del profesor, disfrutenla 😃.`,
+    github: "https://github.com/DanielRamosValenzuela/react---giftexpertapp",
+  },
+  {
+    id: 14,
+    title: "Heroes app",
+    img: "assets/heroesapp.png",
+    link: "https://heroesappudemy.netlify.app",
+    text: `Esta es un aplicación hecha en React siguendo uno de mis cursos de Udemy, tiene Login (automático hacia mi cuenta) y utiliza React Router, puedes utilizar un buscador para encontrar a tu heroe, o categorizar por DC o Marvel 🦸.`,
+    github: "https://github.com/DanielRamosValenzuela/heroesudemy",
+  },
 ];
 
 export const cursosPortfolio = [

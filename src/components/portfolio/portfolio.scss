@@ -44,6 +44,19 @@
     @include mobile {
       width: 100%;
     }
+    .itemCargando {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid rgb(240, 239, 239);
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      position: relative;
+      transition: all 0.5s ease;
+    }
 
     .item {
       width: 220px;
@@ -93,12 +106,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 70%;
   background-color: white;
   border: 2px solid #000;
   text-align: center;
   box-shadow: 14;
-  height: 90%;
+  height: 70%;
 
   .closeButton {
     position: relative;

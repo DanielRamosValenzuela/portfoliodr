@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { PortfolioList } from "./portfolioList/PortfolioList";
-import { Backdrop, Modal, Fade, Typography, Button, Link } from "@mui/material";
+import {
+  Backdrop,
+  Modal,
+  Fade,
+  Typography,
+  Button,
+  Link,
+  CircularProgress,
+} from "@mui/material";
 import { Close, GitHub } from "@mui/icons-material";
 
 import { fullStackPortfolio, cursosPortfolio } from "../../data";
@@ -17,6 +25,7 @@ export const Portfolio = ({ lenguage }) => {
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState({});
   const [openModal, setOpenModal] = useState(false);
+  const [loadingPicture, setLoadingPicture] = useState(false);
 
   const handleOpenModal = (dataPortfolio) => {
     setOpenModal(!openModal);
@@ -37,8 +46,13 @@ export const Portfolio = ({ lenguage }) => {
       key: 2,
     },
   ];
+  useEffect(() => {
+    setLoadingPicture(false);
+  }, [loadingPicture]);
 
   useEffect(() => {
+    setLoadingPicture(true);
+
     switch (selected) {
       case "fullstack":
         lenguage === true
@@ -127,12 +141,22 @@ export const Portfolio = ({ lenguage }) => {
         })}
       </ul>
       <div className="container">
-        {data.map((dat, i) => (
-          <div className="item" key={i} onClick={() => handleOpenModal(dat)}>
-            <img src={dat.img} alt={dat.title} />
-            <h3>{dat.title}</h3>
-          </div>
-        ))}
+        {loadingPicture === false
+          ? data.map((dat, i) => (
+              <div
+                className="item"
+                key={i}
+                onClick={() => handleOpenModal(dat)}
+              >
+                <img src={dat.img} alt={dat.title} />
+                <h3>{dat.title}</h3>
+              </div>
+            ))
+          : data.map((dat, i) => (
+              <div className="itemCargando" key={i}>
+                <CircularProgress color="secondary" />
+              </div>
+            ))}
       </div>
     </div>
   );

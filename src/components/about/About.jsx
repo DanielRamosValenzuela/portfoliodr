@@ -27,11 +27,13 @@ export const About = ({ lenguage }) => {
           </h1>
         )}
       </div>
-      <div className="description">
-        <p>{switchLengauge()}</p>
-      </div>
-      <div className="gift">
-        <img src="assets/coding.gif" alt="coding" />
+      <div className="aboutContainer">
+        <div className="gift">
+          <img src="assets/coding.gif" alt="coding" />
+        </div>
+        <div className="description">
+          <p>{switchLengauge()}</p>
+        </div>
       </div>
     </div>
   );

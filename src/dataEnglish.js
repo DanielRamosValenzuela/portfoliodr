@@ -41,6 +41,30 @@ export const fullStackPortfolioEnglish = [
     text: `This is a task to apply for companies, it consists of a call to an API that they gave me to show economic indicators. Bootstrap had to be used for the design.`,
     github: "https://github.com/DanielRamosValenzuela/indicadores",
   },
+  {
+    id: 12,
+    title: "Blackjack",
+    img: "assets/blackjack.png",
+    link: "https://danielramosvalenzuela.github.io/blackjackudemy/",
+    text: `I made this application within one of my Udemy JavaScript courses following the teacher's instructions, it was very entertaining I hope you enjoy it 😉.`,
+    github: "https://github.com/DanielRamosValenzuela/blackjackudemy",
+  },
+  {
+    id: 13,
+    title: "Gift app",
+    img: "assets/giftapp.png",
+    link: "https://giftappudemy.netlify.app/",
+    text: `This application calls a gifts API, I made it in one of my React Udemy courses following the teacher's instructions, enjoy it 😃.`,
+    github: "https://github.com/DanielRamosValenzuela/react---giftexpertapp",
+  },
+  {
+    id: 14,
+    title: "Heroes app",
+    img: "assets/heroesapp.png",
+    link: "https://heroesappudemy.netlify.app",
+    text: `This is an application made in React following one of my Udemy courses, it has Login (automatic to my account) and uses React Router, you can use a search engine to find your hero, or categorize by DC or Marvel 🦸. `,
+    github: "https://github.com/DanielRamosValenzuela/heroesudemy",
+  },
 ];
 
 export const cursosPortfolioEnglish = [

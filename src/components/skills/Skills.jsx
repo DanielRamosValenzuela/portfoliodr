@@ -60,14 +60,19 @@ export const Skills = ({ lenguage }) => {
       title: "Git",
     },
     {
-      id: 12,
-      img: "assets/json.png",
-      title: "JSON",
-    },
-    {
       id: 13,
       img: "assets/redux.png",
       title: "Redux",
+    },
+    {
+      id: 13,
+      img: "assets/mongo.png",
+      title: "Mongo DB",
+    },
+    {
+      id: 14,
+      img: "assets/postman.png",
+      title: "Postman",
     },
   ];
   return (
